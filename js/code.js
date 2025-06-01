@@ -1,11 +1,10 @@
-document.canvas.style.touchAction = "none";
-
 const canvas = document.querySelector("canvas");
 const contenedor = document.querySelector(".contenedor_raspable");
 const ctx = canvas.getContext("2d");
 
 canvas.width = contenedor.clientWidth;
 canvas.height = contenedor.clientHeight;
+canvas.style.touchAction = "none";
 
 ctx.fillStyle = "gray";
 ctx.fillRect(0,0, canvas.width, canvas.height);
