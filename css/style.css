@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(to right, #ff91c0 50%, #7ec8e3 50%);
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 100vh; /* Hace que ocupe toda la pantalla */
+    margin: 0;
+    flex-direction: column; /* Acomoda los elementos en columna */
+}
+
+.contenedor_raspable {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 420px;
+    height: 600px;
+    position: relative;
+    margin: auto;
+}
+
+.oculto {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; /* Canvas encima */
+}
+
+img{
+    width: 420px;
+    height: 600px;
+}
