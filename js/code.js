@@ -1,4 +1,4 @@
-document.body.style.touchAction = "none";
+document.canvas.style.touchAction = "none";
 
 const canvas = document.querySelector("canvas");
 const contenedor = document.querySelector(".contenedor_raspable");
