@@ -6,6 +6,7 @@ body {
     min-height: 100vh; /* Hace que ocupe toda la pantalla */
     margin: 0;
     flex-direction: column; /* Acomoda los elementos en columna */
+    overflow-y: auto;
 }
 
 .contenedor_raspable {
